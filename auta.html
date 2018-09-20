@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+			<title>Klasyczne auta - historia w pigułce</title>
+
+			<meta name="description" content="Klasyczne auta. Historia i wiele innych ciekawych informacji na ich temat. Sprawdź już teraz!" />			<!-- opis witryny w google-->
+			<meta name="keywords" content="klasyka, retro, stare auta, mercedes, bmw, ford, samochód, wyścigi" />
+
+			<link rel="stylesheet"  href="style.css"  type="text/css" />
+			<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+			<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+			<script src="jquery-3.2.0.min.js"></script> <!--podpinam biblioteke jquery -->
+			<script src="jquery.scrollTo.min.js"></script>
+
+				<script>
+
+		jQuery(function($) <!--naglowek funkcji -->
+		{ 											<!-- cialo funkcji -->
+			//zresetuj scrolla
+			$.scrollTo(0);
+
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1200); }); //klikniecie strzalki spowoduje przewiniecie do 1 otwierajacego tagu body
+		}
+		);
+
+	//pokaz podczas przewijania
+	$(window).scroll(function()
+	{
+			if($(this).scrollTop()>300)  $('.scrollup').fadeIn();//obiekt na rzecz ktorego ta metoda zostala wywolana; scroll od gory ekranu; jesli ktos przewinal o 300 pikseli w doł strone to zlap klase scrollup(przycisk) i spraw ze pojawi sie na ekranie w sposob animowany
+			else $('.scrollup').fadeOut();
+	}
+	);
+			</script>
+
+</head>
+
+<body onload="zmienslajd()">
+
+				<div class="wrapper">
+
+							<div class="header">
+
+										<div class="logo">
+										<span style="color: #d93a13">auto</span><span style="color:#00c5d4">klasyk.com</span>
+										</div>
+
+										<a href="#" class="scrollup"></a> <!-- funkcja odpowiadajaca za powrot do spisu ale to jquery obsluzy przewiniecie dlatego tylko "#" -->
+							</div>
+
+							<div class="nav">
+										<ol>
+													<li><a href="strona-glowna">Strona główna</a></li>
+													<li><a href="#">Historia</a>
+															<ul>
+																		<li><a href="poczatki">Początki</a></li>
+																		<li><a href="silnik-spalinowy">Silnik spalinowy</a></li>
+																		<li><a href="pierwsze-fabryki">Pierwsze fabryki</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta rodzinne</a>
+															<ul>
+																		<li><a href="lancia">Lancia</a></li>
+																		<li><a href="ford">Ford</a></li>
+																		<li><a href="peugeot">Peugeot</a></li>
+																		<li><a href="volkswagen">Volkswagen</a></li>
+																		<li><a href="mercedes">Mercedes-Benz</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta sportowe</a>
+															<ul>
+																		<li><a href="#">Cadillac</a></li>
+																		<li><a href="#">Ferrari</a></li>
+																		<li><a href="#">Lamborghini</a></li>
+																		<li><a href="#">Jensen Interceptor</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Wyścigówki</a>
+															<ul>
+																		<li><a href="#">Maserati</a></li>
+																		<li><a href="#">Lotus</a></li>
+																		<li><a href="#">AC Cobra</a></li>
+															</ul>
+													</li>
+
+													<li><a href="#">O autorze</a></li>
+										</ol>
+							</div>
+
+							<div class="content">
+
+
+					<div id="h1"><h1>Witaj w świecie samochodów!</h1>	</div>
+
+					<p>Historia pojazdów samochodowych zaczęła rysować się w początkach rozwoju silnika spalinowego. Ale czy to był prawdziwy początek. W moich oczach prawdziwym początkiem transportu, przemieszczania się, pojazdów wszelkiej maści a także pojazdów samochodowych był jeden z najważniejszych momentów w historii ludzkości, a mianowicie wynalezienie koła ok. 4000 lat przed naszą erą w Mezopotamii. To właśnie ten z pozoru banalny wynalazek zapoczątkował rozwój zarówno transportu, jak i miał wpływ na praktycznie każdą dziedzinę naszego życia. Koła wszelkiego rodzaju możemy spotkać praktycznie wszędzie. Znajdują się w silnikach, pojazdach, maszynach przemysłowych, zegarkach i wielu, wielu innych przedmiotach, których nie sposób wymienić. Koło zrewolucjonizowało świat. Przed 200 rokiem naszej ery używane było jako koło wodne do napędu w młynach. </p>
+
+<div id="sliderukryj">
+					<span onclick = "ustawslajd(1)" style="cursor:pointer;">[ 1 ] </span>
+					<span onclick = "ustawslajd(2)" style="cursor:pointer;">[ 2 ]</span>
+					<span onclick = "ustawslajd(3)" style="cursor:pointer;">[ 3 ] </span>
+					<span onclick = "ustawslajd(4)" style="cursor:pointer;">[ 4 ] </span>
+					<span onclick = "ustawslajd(5)" style="cursor:pointer;">[ 5 ] </span>
+</div>
+
+		<div id="slider"></div> 		<!-- pokazuje obrazki -->
+
+<script>
+					// skrypt obrazki
+		var timer1 = 0;
+		var timer2 = 0;
+
+			function ustawslajd(nrslajdu)
+			{
+				clearTimeout(timer1);
+				clearTimeout(timer2);
+				numer = nrslajdu - 1;
+
+				schowaj();
+				setTimeout("zmienslajd()", 500);
+			}
+
+			function schowaj()
+			{
+				$("#slider").fadeOut(500); //schowanie obrazka
+			}
+
+			function zmienslajd()
+			{
+				numer++; if (numer>5) numer=1;
+
+				var plik = "<img src=\"slajdy/klasyk" + numer + ".png\" />";
+
+				document.getElementById("slider").innerHTML = plik;
+				$("#slider").fadeIn(500);
+
+				timer1= setTimeout("zmienslajd()", 5000); //fadeIn wykona sie po 5 sek
+				timer2 = setTimeout("schowaj()", 4500);		//fadeOut wykona sie po 4,5 sek
+			}
+</script>
+
+					Próby wykorzystania silników benzynowych do produkcji prymitywnych pojazdów rozpoczęto bardzo wcześnie, jednak pierwszym pełnoprawnym pojazdem napędzanym przez protoplastę dzisiejszej benzyny jest stworzony przez mieszkającego w Wiedniu Siegfrieda Marcusa - Wagen von. To wózek ręczny napędzany silnikiem benzynowym, zbudowany przez niego w 1870 roku.
+
+					W latach 1888–89 Marcusowi udało się opracować kolejną konstrukcję, którą możemy  nazwać pełnoprawnym samochodem. Twór zachował się do dziś i wciąż nadaje się do jazdy. Auto można obejrzeć w Muzeum Techniki w Wiedniu. </br></br>
+
+					<p>Na lekcjach historii nauczycielki jako o pierwszym aucie opowiadają zwykle o Fordzie T. Faktycznie właśnie ten samochód odniósł pierwszy spektakularny sukces, jednak warto przypomnieć model, który jako pierwszy wszedł do seryjnej produkcji. Był nim Oldsmobile Curved Dash zaprezentowany po raz pierwszy w kwietniu 1901 roku. W ciągu pierwszych 12 miesięcy produkcji skonstruowano 425 egzemplarzy Curved Dash. Auto sprzedawano aż do 1907 roku i ostatecznie jego produkcja zamknęła się w ilości około 19 000 sztuk. Ile kosztował Oldsmobile? Szacuje się, że koszt Curved Dash wahał się w okolicach równowartości 17 tysięcy dzisiejszych dolarów amerykańskich. Sporo, prawda?</p>
+
+					<p>Pierwsze obowiązkowe tablice rejestracyjne pojawiły się w 1893 roku w Paryżu. Początkowo obowiązek dotyczył jedynie stolicy Francji. Każda tablica musiała pozwalać na imienną identyfikację właściciela pojazdu, a także samego wehikułu. Trzy lata później obowiązek rejestracji pojawił się także w Niemczech. W Polsce pierwsze tablice rejestracyjne wydano w 1922 roku. Wcześniej do identyfikacji nielicznych samochodów służyły blachy nadawane jeszcze przez zaborców. </p>
+
+					<p>Natomiast pierwsze znaki drogowe to wynalazek Rzymian, jednak w tym tekście przyglądamy się historii motoryzacji, a nie Imperium Rzymskiego, więc warto spojrzeć na to, co możemy nazwać pierwszymi znakami drogowymi, które podobne były do stosowanych obecnie. Prawdopodobnie oznaczenie drogowe pojawiły się po raz pierwszy około roku 1880. W grudniu 1879 roku brytyjska Bicycle Union zainstalowała wokół dróg drewniane pachołki z blaszanymi tabliczkami. Pierwszy znak przeznaczono głównie dla rowerzystów. Napisano na nim "This Hill is dangerous" </p>
+
+							</div>
+
+							<div class="socials">
+										<div class="socialdivs">
+													<div class="fb">
+														<a href="https://web.facebook.com/lukaszkwasowski" target="_blank"  class="tilelink"><i class="icon-facebook"></i></a>
+													</div>
+													<div class="yt">
+														<a href="http://youtube.com" target="_blank"  class="tilelink"><i class="icon-youtube-1"></i></a>
+													</div>
+													<div class="tw">
+														<a href="http://twitter.com" target="_blank"  class="tilelink"><i class="icon-twitter"></i></a>
+													</div>
+													<div class="gplus">
+														<a href="http://plus.google.com" target="_blank"  class="tilelink"><i class="icon-gplus-squared"></i></a>
+													</div>
+											<div style="clear:both;"></div>
+										</div>
+							</div>
+
+							<div class="footer"> autoklasyk.com &copy; 2018
+							</div>
+				</div>
+
+
+
+			<script>
+
+								$(document).ready(function() {
+															var NavY = $('.nav').offset().top;
+
+															var stickyNav = function()
+														{
+																	var ScrollY = $(window).scrollTop();
+
+															if (ScrollY > NavY) {
+																			$('.nav').addClass('sticky');
+																			$('.content').css('padding-top',' 68px'); <!--gorny padding zwieksza sie lub zmniejsza w trakcie zmiany pozycji menu, wiec content pozostaje bez ruchu -->
+															} else {
+																			$('.nav').removeClass('sticky');
+																			$('.content').css('padding-top', '10px');
+															}
+														};
+
+														stickyNav();
+
+														$(window).scroll(function() {
+																			stickyNav();
+														});
+													});
+
+															var numer = Math.floor(Math.random()*5)+1; // nr aktualnie wyswietlanego slajdu
+
+			</script>
+
+
+</body>
+</html>

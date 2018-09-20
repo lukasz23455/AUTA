@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+			
+			<title>Klasyczne auta - historia w pigułce</title> 
+			
+			<meta name="description" content="Klasyczne auta. Historia i wiele innych ciekawych informacji na ich temat. Sprawdź już teraz!" />			<!-- opis witryny w google-->
+			<meta name="keywords" content="klasyka, retro, stare auta, mercedes, bmw, ford, samochód, wyścigi" /> 
+
+			<link rel="stylesheet"  href="style.css"  type="text/css" />		
+			<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">		
+			<link href="css/fontello.css" rel="stylesheet" type="text/css" />			
+			<script src="jquery-3.2.0.min.js"></script> <!--podpinam biblioteke jquery -->
+			<script src="jquery.scrollTo.min.js"></script>
+	
+				<script>
+	
+		jQuery(function($) <!--naglowek funkcji -->
+		{ 											<!-- cialo funkcji -->
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); }); //klikniecie strzalki spowoduje przewiniecie do 1 otwierajacego tagu body
+		}
+		);
+	
+	//pokaz podczas przewijania
+	$(window).scroll(function()
+	{
+			if($(this).scrollTop()>300)  $('.scrollup').fadeIn();//obiekt na rzecz ktorego ta metoda zostala wywolana; scroll od gory ekranu; jesli ktos przewinal o 300 pikseli w doł strone to zlap klase scrollup(przycisk) i spraw ze pojawi sie na ekranie w sposob animowany
+			else $('.scrollup').fadeOut();
+	}
+	);
+			</script>
+			
+</head>
+
+<body onload="zmienslajd()">
+
+											<a href="#" class="scrollup"></a> <!-- funkcja odpowiadajaca za powrot do spisu ale to jquery obsluzy przewiniecie dlatego tylko "#" -->
+
+				<div class="wrapper">
+				
+
+							
+							<div class="header">
+							
+										<div class="logo">
+										<span style="color: #d93a13">auto</span><span style="color:#00c5d4">klasyk.com</span>
+										</div>
+										
+										<a href="#" class="scrollup"></a> <!-- funkcja odpowiadajaca za powrot do spisu ale to jquery obsluzy przewiniecie dlatego tylko "#" -->
+							</div>
+							
+							<div class="nav">
+										<ol>
+													<li><a href="strona-glowna">Strona główna</a></li>
+													<li><a href="#">Historia</a>
+															<ul>
+																		<li><a href="poczatki">Początki</a></li>
+																		<li><a href="silnik-spalinowy">Silnik spalinowy</a></li>
+																		<li><a href="pierwsze-fabryki">Pierwsze fabryki</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta rodzinne</a>
+															<ul>
+																		<li><a href="lancia">Lancia</a></li>
+																		<li><a href="ford">Ford</a></li>
+																		<li><a href="peugeot">Peugeot</a></li>
+																		<li><a href="volkswagen">Volkswagen</a></li>
+																		<li><a href="mercedes">Mercedes-Benz</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta sportowe</a>
+															<ul>
+																		<li><a href="#">Cadillac</a></li>
+																		<li><a href="#">Ferrari</a></li>
+																		<li><a href="#">Lamborghini</a></li>
+																		<li><a href="#">Jensen Interceptor</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Wyścigówki</a>
+															<ul>
+																		<li><a href="#">Maserati</a></li>
+																		<li><a href="#">Lotus</a></li>
+																		<li><a href="#">AC Cobra</a></li>
+															</ul>
+													</li>
+															
+													<li><a href="#">O autorze</a></li>
+										</ol>
+							</div>
+							
+							<div class="content">
+							
+
+					<div id="h1"><h1>Silnik spalinowy</h1>	</div>	
+
+					<p>Człowiekiem, który w pewnym stopniu przyczynił się do powstania silnika spalinowego był nadworny uczony króla Ludwika XIV Christian Huygens genialny fizyk i matematyk pochodzący z Holandii. Stworzył on podstawy, na których potem Otto oparł swój koncept silnika spalania wewnętrznego.</p>
+
+					<p>Huygens stworzył w roku 1673 maszynę, która miała pompować wodę do ogrodów królewskich. Zapalał on mianowicie proch strzelniczy w cylindrze,
+					a gazy powstałe w wyniku eksplozji przesuwały do góry tłok umieszczony w cylindrze. System zadziałał tylko raz, bo potem już nie było w cylindrze prochu. Ale ten pierwszy ruch tłoka, który wedle wszelkich zasad konstrukcji silnika nazwać należy suwem pracy, stanowił najważniejszy krok w stronę stworzenia maszyny spalinowej. </p>
+		
+					<p>Kolejny etap na drodze stworzenia silnika spalinowego wyznaczył Etienne Lenoir, który w roku 1860 zbudował silnik gazowy. W tym silniku dokonywał się za pomocą elektryczności zapłon gazu świetlnego, przez co dochodziło do przemieszczenia tłoka. Oczywiście, silnik ten nie pracował płynnie jak dzisiejsze jednostki napędowe. Jednak do zapłonu dochodziło w sposób automatyczny, a maszyna osiągała moc 2 kilowatów.Od tej konstrukcji do 4-suwowego silnika Otta było już niedaleko. A ten pracował zupełnie inaczej: ciszej, płynniej, szybciej, efektywniej i oszczędniej od wszystkich stworzonych przed nim maszyn.<p>
+					
+					<p>W XIX wieku pojawia się pierwszy samochód! W roku 1886 Carl Benz wymontował z bryczki dyszle i wstawił na ich miejsce koło kierowane jak
+					w rowerze. W tak skonstruowany pojazd trzykołowy wmontował ponad osią kół tylnych własnej konstrukcji silnik benzynowy. I tak powstał "patentowany pojazd motorowy".</p>
+
+					<p>Rudolf Diesel skonstruował silnik o nieco zmienionej zasadzie działania. Przyświecającym mu celem było stworzenie maszyny jeszcze wydajniejszej, a opierającej się na ogólnej koncepcji silnika spalinowego. W roku 1893 zdobył patent na swą konstrukcję "silnika o zapłonie samoczynnym".
+
+					<p>Silnik Diesla pracuje w gruncie rzeczy tak samo jak silnik Otta, tyle że mieszanka paliwowo-powietrzna nie jest zapalana świecą zapłonową.
+					Tu zassane powietrze jest ściskane pod tak ogromnym ciśnieniem (stąd inna nazwa tej maszyny: "silnik wysokoprężny"), że rozgrzewa się do bardzo wysokiej temperatury. Jeśli teraz do cylindra zostanie wtryśnięte paliwo, temperatura sama je zapali.</p>
+
+					<p>Pierwszy pojazd dieslowski produkcji firmy MAN był jednocylindrowym gigantem o pojemności niemal 20 litrów, który przy prędkości 172 obrotów na minutę rozwijał moc 15 kW. W 1936 roku Mercedes zastosował diesla po raz pierwszy w seryjnym aucie osobowym.</p>
+
+					<p>Od samego początku równolegle istniał silnik dwusuwowy. Konstrukcja silnika dwusuwowego jest o wiele prostsza niż czterosuwowego. Tu 2 suwy "załatwiane" są w jednym. Nie ma zaworów, które wpuszczają do cylindra powietrze i wypuszczają spaliny. Wszystko opiera się na kanalikach wyrzeźbionych w ściankach tłoka i cylindra, które sterują wymianą gazów. Ojczyzną aut wyposażonych w silniki dwusuwowe były Niemcy (DKW do 1966, Trabant i Wartburg do 1989). Niemniej motocykle, kosiarki do trawy jeszcze napędzane są takimi silnikami, choć odchodzi się od nich z powodu wymagań czystości spalin. </p>
+					
+					<p>Swój własny rozdział w historii motoryzacji napisał Felix Wankel. Jego "silnik z tłokiem wirującym" nie był jednostką tak popularną, ale konstrukcja fascynuje nadal. W roku 1953 Wankel zdołał przekonać do swego pomysłu firmę NSU, wówczas największego w świecie producenta motocykli, i już w 1964 na szosy wyjechał pierwszy samochód z tym silnikiem, NSU Wankelspider. W 3 lata potem na rynku dostępny był legendarny model NSU Ra 80, samochód który rozsławił silnik z tłokiem wirującym. Wówczas mawiano, że silnik Wankla w sposób genialny łączy w sobie wady silnika dwu- i czterosuwowego, ale ta jakże egzotyczna konstrukcja jeździ do dziś w samochodach Mazdy, i to naprawdę dobrze, bezawaryjnie i ekologicznie. </p>
+					
+					<p>W naszym stuleciu technika motoryzacyjna rozwijała się w sposób niebywale szybki. Emisja trujących substancji w spalinach zmierza do zera a
+					recykling i ochrona naturalnych zasobów stanowią obecnie podstawowe aspekty ewolucji silników.</p>
+					
+							</div>
+							
+							<div class="socials">
+										<div class="socialdivs">
+													<div class="fb">
+														<a href="http://facebook.com" target="_blank"  class="tilelink"><i class="icon-facebook"></i></a>
+													</div>
+													<div class="yt">
+														<a href="http://youtube.com" target="_blank"  class="tilelink"><i class="icon-youtube-1"></i></a>
+													</div>
+													<div class="tw">
+														<a href="http://twitter.com" target="_blank"  class="tilelink"><i class="icon-twitter"></i></a>
+													</div>
+													<div class="gplus">
+														<a href="http://plus.google.com" target="_blank"  class="tilelink"><i class="icon-gplus-squared"></i></a>
+													</div>
+											<div style="clear:both;"></div>
+										</div>
+							</div>	
+
+							<div class="footer"> autoklasyk.com &copy; 2017  
+							</div>
+				</div>
+				
+
+		
+			<script>
+
+								$(document).ready(function() {
+															var NavY = $('.nav').offset().top;
+	 
+															var stickyNav = function()
+														{
+																	var ScrollY = $(window).scrollTop();
+		  
+															if (ScrollY > NavY) { 
+																			$('.nav').addClass('sticky');
+																			$('.content').css('padding-top',' 68px'); <!--gorny padding zwieksza sie lub zmniejsza w trakcie zmiany pozycji menu, wiec content pozostaje bez ruchu -->
+															} else {
+																			$('.nav').removeClass('sticky'); 
+																			$('.content').css('padding-top', '10px');
+															}
+														};
+	 
+														stickyNav();
+	 
+														$(window).scroll(function() {
+																			stickyNav();
+														});
+													});
+													
+															var numer = Math.floor(Math.random()*5)+1; // nr aktualnie wyswietlanego slajdu 
+		
+			</script>
+			
+
+</body>
+</html>

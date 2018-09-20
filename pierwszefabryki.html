@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+			
+			<title>Klasyczne auta - historia w pigułce</title> 
+			
+			<meta name="description" content="Klasyczne auta. Historia i wiele innych ciekawych informacji na ich temat. Sprawdź już teraz!" />			<!-- opis witryny w google-->
+			<meta name="keywords" content="klasyka, retro, stare auta, mercedes, bmw, ford, samochód, wyścigi" /> 
+
+			<link rel="stylesheet"  href="style.css"  type="text/css" />		
+			<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">		
+			<link href="css/fontello.css" rel="stylesheet" type="text/css" />			
+			<script src="jquery-3.2.0.min.js"></script> <!--podpinam biblioteke jquery -->
+			<script src="jquery.scrollTo.min.js"></script>
+	
+				<script>
+	
+		jQuery(function($) <!--naglowek funkcji -->
+		{ 											<!-- cialo funkcji -->
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); }); //klikniecie strzalki spowoduje przewiniecie do 1 otwierajacego tagu body
+		}
+		);
+	
+	//pokaz podczas przewijania
+	$(window).scroll(function()
+	{
+			if($(this).scrollTop()>300)  $('.scrollup').fadeIn();//obiekt na rzecz ktorego ta metoda zostala wywolana; scroll od gory ekranu; jesli ktos przewinal o 300 pikseli w doł strone to zlap klase scrollup(przycisk) i spraw ze pojawi sie na ekranie w sposob animowany
+			else $('.scrollup').fadeOut();
+	}
+	);
+			</script>
+			
+</head>
+
+<body onload="zmienslajd()">
+
+											<a href="#" class="scrollup"></a> <!-- funkcja odpowiadajaca za powrot do spisu ale to jquery obsluzy przewiniecie dlatego tylko "#" -->
+
+				<div class="wrapper">
+				
+
+							
+							<div class="header">
+							
+										<div class="logo">
+										<span style="color: #d93a13">auto</span><span style="color:#00c5d4">klasyk.com</span>
+										</div>
+										
+										<a href="#" class="scrollup"></a> <!-- funkcja odpowiadajaca za powrot do spisu ale to jquery obsluzy przewiniecie dlatego tylko "#" -->
+							</div>
+							
+							<div class="nav">
+										<ol>
+													<li><a href="strona-glowna">Strona główna</a></li>
+													<li><a href="#">Historia</a>
+															<ul>
+																		<li><a href="poczatki">Początki</a></li>
+																		<li><a href="silnik-spalinowy">Silnik spalinowy</a></li>
+																		<li><a href="pierwsze-fabryki">Pierwsze fabryki</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta rodzinne</a>
+															<ul>
+																		<li><a href="lancia">Lancia</a></li>
+																		<li><a href="ford">Ford</a></li>
+																		<li><a href="peugeot">Peugeot</a></li>
+																		<li><a href="volkswagen">Volkswagen</a></li>
+																		<li><a href="mercedes">Mercedes-Benz</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta sportowe</a>
+															<ul>
+																		<li><a href="#">Cadillac</a></li>
+																		<li><a href="#">Ferrari</a></li>
+																		<li><a href="#">Lamborghini</a></li>
+																		<li><a href="#">Jensen Interceptor</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Wyścigówki</a>
+															<ul>
+																		<li><a href="#">Maserati</a></li>
+																		<li><a href="#">Lotus</a></li>
+																		<li><a href="#">AC Cobra</a></li>
+															</ul>
+													</li>
+															
+													<li><a href="#">O autorze</a></li>
+										</ol>
+							</div>
+							
+							<div class="content">
+							
+
+					<div id="h1"><h1>Pierwsze fabryki</h1>	</div>	
+
+							<p>
+					Pewien letni dzień 1888 roku na zawsze zmienił motoryzacyjny świat. Właśnie wtedy znany weterynarz John Boyd Dunlop wynalazł pneumatyczne ogumienie z dętką – bez tego wynalazku trudno byłoby wyobrazić sobie współczesny świat.</p>
+
+					<p>Jak do tego doszło? Syn J. Dunlopa, Jack, jeździł na trójkołowym rowerku. Jego twarde koła sprawiały, że poruszanie się po brukowanej ulicy nie należało do najprzyjemniejszych. Pomysłowy ojciec z kawałka płótna, gumy i smoczka z butelki do karmienia niemowląt skonstruował pierwszą w świecie oponę z dętką. Napompował ją przy pomocy pompki do piłki nożnej.</p>
+
+					<p>Wynalazek J. Dunlopa okazał się wielkim przełomem: poza rowerami dętkowa opona mogła być montowana również w samochodach i motocyklach. Dunlop 31 października 1888 r. opatentował oponę pneumatyczną z dętką, dając początek nowej erze motoryzacji.</p>
+					
+
+					<p>W roku 1899 Horch założył w Köln swoją pierwszą firmę, był to warsztat zajmujący się naprawą samochodów Benza.  Już w 1901 zbudował swój pierwszy własny samochód. No ale w swoim warsztacie nie miał miejsca (nie mówiąc o kasie) na uruchomienie produkcji. Poszukiwania inwestora i właściwego miejsca na fabrykę trochę potrwały, aż w 1904 Horch osiadł w Zwickau i założył tam August Horch & Cie. Motorwagenwerke AG. Znaczy założył on, ale pieniądze były inwestorów.</p>
+
+					<p>Pierwszy większy sukces przyszedł w 1906, kiedy to samochód Horcha (Horch 18/20)wygrał dość prestiżowy wyścig samochodowy Herkomer-Konkurrenz, 1700 kilometrów w dużym stopniu przez Alpy. W wyścigu brały udział normalne, seryjne samochody a wygrywał ten najbardziej niezawodny.</p>
+					
+					<p>Produkcja szła nieźle, ale Horch wszedł w konflikt z radą nadzorczą swojej firmy. Poszło o to, że Horch zamiast wykorzystać sukces do zwiększenia sprzedaży i puszczenia nowych modeli na rynek, zajął się konstruowaniem nowego samochodu sportowego z całkowitą nowością - silnikiem sześciocylindrowym. No i konflikt tak się zaognił, że Horch odszedł z firmy noszącej jego nazwisko. Jego udział w kapitale zakładowym był znikomy i Horch nie miał tam nic do powiedzenia - więc założył nieopodal August Horch Automobilwerke GmbH (również za pieniądze zaprzyjaźnionych inwestorów). Na to poprzednia jego firma wytoczyła mu proces w sprawie praw do nazwy, po dłuższych perypetiach Horch utracił prawo do używania swojego nazwiska w nazwie swojej firmy i do nazywania nim swoich produktów. Sytuacja cokolwiek głupia, czyż nie?</p>
+
+					<p>Konflikt między założycielem firmy a inwestorami, często na tle zaangażowania w sporty motorowe, był dość typowy w tym czasie, przypomnijmy sobie Wartburga. A swoją drogą firma Horch nie przynosiła wstydu Augustowi Horchowi, ale o tym w następnej notce.</p>
+
+					<p>Powstał więc problem, jak nazwać swoją firmę i swoje samochody. Horch trochę pokombinował - i wymyślił całkiem nieźle: "Horch" to forma trybu rozkazującego od czasownika horchen (słuchać, nadsłuchiwać). Horch przetłumaczył to słowo na łacinę - audire, w trybie rozkazującym wyszło audi. I od roku 1910 jego firma nazywała się Audi Automobilwerke GmbH Zwickau. Nazwa ładna, świetna na markę, ale to pewnie dlatego nazwisko Horch zostało prawie zapomniane.</p>
+
+					<p>W 1914 cztery samochody Audi Typ C brały udział w wyścigu w Alpach, na drogach o nachyleniu do 20%. Zespół otrzymał nagrodę zespołową - bo parę innych samochodów było szybsze, ale wszystkie Audi zespołu dojechały.</p>
+
+					<p>W 1915 Audi GmbH zostało przekształcone w Audi AG. Wszystko pięknie, świeży kapitał, tyle że Horch stracił w ten sposób praktycznie jakikolwiek wpływ na firmę, mimo że był w zarządzie. Więc w 1920 przeszedł z zarządu do rady nadzorczej i zajął się pracą dla różnych instytucji jako biegły do spraw motoryzacji. A oprócz tego zajmował sporo stanowisk woluntarystycznych, na przykład prowadził komisję normalizacyjną niemieckiego przemysłu.</p>
+
+					<p>W 1923 Horch zauważył, że kierownica w samochodzie jeżdżącym po prawej powinna być jednak z lewej strony. Wcześniej była po prawej, w najlepszym razie na środku, bo tak było w powozach konnych. Tak, to dopiero 1923. Tak, to właśnie August Horch był autorem tej normy.</p>
+					
+					
+					<p>Henry Ford zmienił nasze życie dzięki praktycznym samochodom po przystępnych cenach. Dziełem jego pomysłu jest ruchoma linia montażowa oraz techniki masowej produkcji, które ustanowiły standardy światowej produkcji przemysłowej w pierwszej połowie XX wieku.</p>
+					
+					<p>W 1896 roku skonstruował kwadrycykl – pojazd o własnym napędzie według własnego pomysłu. Pierwszy silnik Forda ujrzał z warkotem światło dzienne i zapisał się w historii na drewnianym kuchennym stole w domu Forda przy Bagley Avenue 58. Następnym krokiem była konstrukcja z silnikiem opartym na ramie, do której umocowane były cztery koła od roweru – tak powstał jego pierwszy Ford.</p>
+					
+					<p>Ford Motor Company rozpoczęła działalność w 1903 roku. Henry Ford, właściciel 25,5 % akcji, został wiceprezesem i objął stanowisko głównego inżyniera. Zakłady Forda przy Mack Avenue w Detroit produkowały zaledwie kilka samochodów dziennie. Przy każdym aucie pracowały dwu- lub trzyosobowe załogi robotników, składając je z części wyprodukowanych na zamówienie w innych fabrykach. Pierwszy samochód, który powstał w zakładach Forda sprzedano 23 lipca 1903 roku. Henry został prezesem i przejął kontrolny pakiet akcji w roku 1906.</p>
+
+					<p>Henry Ford wcielił w życie swoje marzenie o produkowaniu samochodów dostępnych cenowo, ekonomicznych, a jednocześnie niezawodnych, wprowadzając na rynek w 1908 r Model T. Pojazd ten był zapowiedzią nowej ery motoryzacji dla klientów indywidualnych – Model T był łatwy w obsłudze, utrzymaniu i w prowadzeniu po trudnych drogach. Jego sukces był natychmiastowy.</p>
+					
+							</div>
+							
+							<div class="socials">
+										<div class="socialdivs">
+													<div class="fb">
+														<a href="http://facebook.com" target="_blank"  class="tilelink"><i class="icon-facebook"></i></a>
+													</div>
+													<div class="yt">
+														<a href="http://youtube.com" target="_blank"  class="tilelink"><i class="icon-youtube-1"></i></a>
+													</div>
+													<div class="tw">
+														<a href="http://twitter.com" target="_blank"  class="tilelink"><i class="icon-twitter"></i></a>
+													</div>
+													<div class="gplus">
+														<a href="http://plus.google.com" target="_blank"  class="tilelink"><i class="icon-gplus-squared"></i></a>
+													</div>
+											<div style="clear:both;"></div>
+										</div>
+							</div>	
+
+							<div class="footer"> autoklasyk.com &copy; 2017  
+							</div>
+				</div>
+				
+
+		
+			<script>
+
+								$(document).ready(function() {
+															var NavY = $('.nav').offset().top;
+	 
+															var stickyNav = function()
+														{
+																	var ScrollY = $(window).scrollTop();
+		  
+															if (ScrollY > NavY) { 
+																			$('.nav').addClass('sticky');
+																			$('.content').css('padding-top',' 68px'); <!--gorny padding zwieksza sie lub zmniejsza w trakcie zmiany pozycji menu, wiec content pozostaje bez ruchu -->
+															} else {
+																			$('.nav').removeClass('sticky'); 
+																			$('.content').css('padding-top', '10px');
+															}
+														};
+	 
+														stickyNav();
+	 
+														$(window).scroll(function() {
+																			stickyNav();
+														});
+													});
+													
+															var numer = Math.floor(Math.random()*5)+1; // nr aktualnie wyswietlanego slajdu 
+		
+			</script>
+			
+
+</body>
+</html>

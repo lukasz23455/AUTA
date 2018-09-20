@@ -1,0 +1,310 @@
+body
+{
+	background-image: url(dark-triangles/dark-triangles/dark-triangles.png);
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	margin: 0 !important;
+}
+
+.wrapper
+{
+	width:100%;
+}
+
+.scrollup
+{
+	width:64px;
+	height:64px;
+	text-decoration:none;
+	background: url("img/up.png") no-repeat 0px 0px; /*pokaz tylko jedna taaka grafike, nie powtarzaj */ /*rozpocznij wypelnianie tla od lewej gornej krawedzi hiperlacza */
+	position: fixed; /*pozycja stała */
+	right: 50px; /*odleglosc od prawej krawedzi okna */
+	bottom: 50px; /*odleglosc od dolnej krawedzi okna */
+	display: none; /*nie wyswietlaj */
+}
+
+.header
+{
+	width:100%;
+	padding: 40px 0;
+}
+
+.logo
+{
+	width:350px;
+	margin-left: auto;
+	margin-right:auto;
+	font-size: 50px;
+}
+
+.nav
+{
+	width:100%;
+	padding: 8px 0;
+	background-color: #b24124;
+	text-align:center;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+#h1
+{
+	text-align: center;
+}
+
+.content
+{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:justify;
+	padding-top:10px;
+}
+
+#slider
+{
+	float:left;
+	border-right: 18px solid rgba(0,0,0,0);  /*przezroczysty kolor */
+}
+
+#sliderukryj
+{
+	color:#fff;
+}
+
+
+.socials
+{
+	width:100%;
+	text-align:center;
+	background-color::#192c13;
+}
+
+.socialdivs
+{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+.fb
+{
+	width:250px;
+	height:155px;
+	float:left;
+}
+
+.fb:hover
+{
+	background-color:#4668b3;
+}
+
+.yt
+{
+	width:250px;
+	height:155px;
+	float:left;
+}
+
+.yt:hover
+{
+	background-color:#d94348;
+}
+
+.tw
+{
+	width:250px;
+	height:155px;
+	float:left;
+}
+
+.tw:hover
+{
+	background-color:#3095d3;
+}
+
+.gplus
+{
+	width:250px;
+	height:155px;
+	float:left;
+}
+
+.gplus:hover
+{
+	background-color:#d95333;
+}
+
+.tilelink
+{
+	color: #fff;
+	text-decoration: none; /*usun podkreslenie tekstu */
+	display:block;
+	width:230px;
+	height: 142px;
+}
+
+.footer
+{
+	text-align:center;
+	background-color::#192c13;
+	padding: 30px;
+}
+
+.sticky
+{
+	width:100%;
+	position:fixed; 		/*stala pozycja */
+	left: 0; 			/*przyklejamy do lewego gornego naroznika ekranu */
+	top:0;
+	z-index: 500;  
+}
+
+
+ol
+{
+		padding:3px;
+		margin:0;
+		list-style-type:none; /* zadnych znaczkow przy pktach */
+		font-size: 18px;
+		height:35px;
+		line-height: 200%; /* jak duzo miejsca w pionie zajmuje jedna linia tekstu */
+		display: inline-block; /*elem. beda sie ukladac obok siebie jak float:left */
+}
+
+ol  a  /*stylizujemy  hiperlacza tylko te ktore  pojawia sie wewnatrz listy ol */
+{
+	color:#000;
+	text-decoration:none;
+	display:block; /*zachowuj sie jak element blokowy , div */
+}
+	
+ol > li /*rodzic ol ,stylizujemy potomka li*/
+{
+	float:left;
+	width: 150px;
+	height: 42px;
+	border-right: 1px dashed #000; /*linia kreskowana */
+}
+
+ol>li:first-child /*pierwsze li w kodzie czyli strona glowna */
+{
+	border-left: 1px dashed #000; 
+}
+
+ol > li:hover
+{
+	background-color:#b24124;
+}
+
+ol > li:hover > a /*zeby zmienic kolor czcionki a nie hiperlacza */
+{
+	color: #4d0000;
+}
+
+ol> li > ul
+{
+	list-style-type:none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display:none;
+}
+
+ol > li:hover >ul  /*czyli jak ma wygladac lista wewnetrzna ul( potomek ol>li) ale tylko kiedy zachodzi hover elementu ol>li */
+{
+	display:block;
+}
+
+ol > li > ul > li
+{
+	background-color:#b24124;
+	position:relative; /*pozycja relatywna, jest w kodzie przed divem content wiec bedzie z przodu */
+	z-index: 100;
+	border-top :1px dashed #000;
+}
+
+ol > li > ul > li:first-child
+{
+	border-top:none;
+}
+
+ol > li > ul > li:hover
+{
+	background-color: #b24124;
+}
+
+ol > li > ul > li:hover > a
+{
+	color: #4d0000;
+}
+
+/*lancia */
+#logolancia
+{
+	float:left;
+	border-right: 18px solid rgba(0,0,0,0);
+}
+
+#lanciastratos
+{
+	float:left;
+	border-right: 18px solid rgba(0,0,0,0);
+}
+
+/*peugeot*/
+
+#peugeot1
+{
+		float:left;
+	border-right: 18px solid rgba(0,0,0,0);
+		border-top: 5px solid rgba(0,0,0,0);
+}
+
+#pg1
+{
+	border-top: 5px solid rgba(0,0,0,0);
+}
+
+#peugeot2
+{
+		float:right;
+	border-left: 18px solid rgba(0,0,0,0);
+}
+
+#pg2
+{
+	border-top: 5px solid rgba(0,0,0,0);
+}
+
+#peugeot3
+{
+	float:left;
+	border-right: 18px solid rgba(0,0,0,0);
+}
+
+#peugeot4
+{
+	float:right;
+	border-left: 18px solid rgba(0,0,0,0);
+	border-bottom: 10px solid rgba(0,0,0,0);
+}
+
+#logo
+{
+	float:left;
+	border-right: 18px solid rgba(0,0,0,0);
+	border-top: 6px solid rgba(0,0,0,0);
+}
+
+
+
+
+
+
+
+
+
+

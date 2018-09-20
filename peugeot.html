@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+			
+			<title>Klasyczne auta - historia w pigułce</title> 
+			
+			<meta name="description" content="Klasyczne auta. Historia i wiele innych ciekawych informacji na ich temat. Sprawdź już teraz!" />			<!-- opis witryny w google-->
+			<meta name="keywords" content="klasyka, retro, stare auta, mercedes, bmw, ford, samochód, wyścigi" /> 
+
+			<link rel="stylesheet"  href="style.css"  type="text/css" />		
+			<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">		
+			<link href="css/fontello.css" rel="stylesheet" type="text/css" />			
+			<script src="jquery-3.2.0.min.js"></script> <!--podpinam biblioteke jquery -->
+			<script src="jquery.scrollTo.min.js"></script>
+	
+				<script>
+	
+		jQuery(function($) <!--naglowek funkcji -->
+		{ 											<!-- cialo funkcji -->
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); }); //klikniecie strzalki spowoduje przewiniecie do 1 otwierajacego tagu body
+		}
+		);
+	
+	//pokaz podczas przewijania
+	$(window).scroll(function()
+	{
+			if($(this).scrollTop()>300)  $('.scrollup').fadeIn();//obiekt na rzecz ktorego ta metoda zostala wywolana; scroll od gory ekranu; jesli ktos przewinal o 300 pikseli w doł strone to zlap klase scrollup(przycisk) i spraw ze pojawi sie na ekranie w sposob animowany
+			else $('.scrollup').fadeOut();
+	}
+	);
+			</script>
+			
+</head>
+
+<body onload="zmienslajd()">
+
+											<a href="#" class="scrollup"></a> <!-- funkcja odpowiadajaca za powrot do spisu ale to jquery obsluzy przewiniecie dlatego tylko "#" -->
+
+				<div class="wrapper">
+				
+
+							
+							<div class="header">
+							
+										<div class="logo">
+										<span style="color: #d93a13">auto</span><span style="color:#00c5d4">klasyk.com</span>
+										</div>
+										
+										<a href="#" class="scrollup"></a> <!-- funkcja odpowiadajaca za powrot do spisu ale to jquery obsluzy przewiniecie dlatego tylko "#" -->
+							</div>
+							
+							<div class="nav">
+										<ol>
+													<li><a href="strona-glowna">Strona główna</a></li>
+													<li><a href="#">Historia</a>
+															<ul>
+																		<li><a href="poczatki">Początki</a></li>
+																		<li><a href="silnik-spalinowy">Silnik spalinowy</a></li>
+																		<li><a href="pierwsze-fabryki">Pierwsze fabryki</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta rodzinne</a>
+															<ul>
+																		<li><a href="lancia">Lancia</a></li>
+																		<li><a href="ford">Ford</a></li>
+																		<li><a href="peugeot">Peugeot</a></li>
+																		<li><a href="volkswagen">Volkswagen</a></li>
+																		<li><a href="mercedes">Mercedes-Benz</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta sportowe</a>
+															<ul>
+																		<li><a href="#">Cadillac</a></li>
+																		<li><a href="#">Ferrari</a></li>
+																		<li><a href="#">Lamborghini</a></li>
+																		<li><a href="#">Jensen Interceptor</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Wyścigówki</a>
+															<ul>
+																		<li><a href="#">Maserati</a></li>
+																		<li><a href="#">Lotus</a></li>
+																		<li><a href="#">AC Cobra</a></li>
+															</ul>
+													</li>
+															
+													<li><a href="#">O autorze</a></li>
+										</ol>
+							</div>
+							
+							<div class="content">
+							
+
+					<div id="h1"><h1>Auta rodzinne</h1>	</div>	
+					
+					<h2>Peugeot</h2>
+
+					<p>Francuski koncern, którego nazwa znana jest obecnie prawie na całym świecie, swoją działalność zapoczątkował w 1810 roku w miejscowości Sous-Cratet. Bracia Jean-Pierre i Jean-Frederic Peugeot wykupili wówczas stary młyn. Po gruntownych przeróbkach jeszcze tego samego roku założono w nim odlewnię stali.</p>
+
+					<p>Na początku wieku braci Peugeot kojarzo­no z doskonałymi piłami, sprężynami i innymi elementami do których wykorzystywano walcowaną przez nich stal. Kilkanaście lat później oferta została rozszerzona i na rynku pojawiły się firmo­wane przez Peugeot młynki do kawy, narzędzia stolarskie i rolnicze. Motoryzacją firma zajęła się dopiero pod koniec XIX wieku.</p>
+
+					<p>Początkowo była to jedynie produkcja rowerów, które coraz częściej pojawiały się w wielkich miastach. Następnie pomysło­dawca ich produkcji (Armand Peugeot wnuk Jean Pierra) zaprojektował trójkołowy pojazd samobieżny napędzany parowym sil­nikiem Serpoletta. Nie był to pierwszy model, którego nie napędzały mięśnie, ale i tak wzbudził on spore zainteresowanie pod­czas zorganizowanej w 1889 roku u stóp wieży Eifla Wystawy Uniwersalnej.</p>
+
+					<p>Zapewne właśnie podczas tej wystawy Armand Peugeot spotkał się z przedstawicielami firmy Panhard & Levassor i podpisał z nimi kontrakt na dostawę silników spalinowych (produkowanych na licencji Daimlera). Owocem tej współpracy stał się pierwszy spalinowy samochód marki Peugeot.</p>
+
+					<div id="peugeot1"><img src= "slajdy/peugeot/peugeot1.png"/></div>
+					<div id="pg1"><p>Po I wojnie światowej produkcja aut rusza w 1919 roku i systematycznie się zwiększa. I tak w 1929 roku debiutuje Peugeot 201. Jest on o tyle istotny, że stanowi początek serii aut z trzycyfrowym oznaczeniem z zerem w środku. Warto dodać, że dwa lata później pojazdy Peugeota jako pierwsze seryjnie produkowane auta zostały wyposażone w niezależne zawieszenie kół. Zaledwi kilka lat później na rynek wchodzi model 402, który zwracał uwagę reflektorami umieszczonymi za atrapą chłodnicy, a także posiadał uchylane przednie szyby. Napędzał go dwulitrowy silnik o mocy 55 KM, ale jego produkcja została przerwana przez wybuch II wojny światowej.</p></div><br>
+
+					<div id="peugeot2"><img src= "slajdy/peugeot/peugeot2.png"/></div>
+					<div id="pg2"><p>Innym autem producenta, który także cieszyło się dużym zainteresowaniem był czterodrzwiowy samochód rodzinny Peugeot 403, który debiutował w 1955 roku. Za jego napęd odpowiadał silnik o pojemności 1,5 litra i mocy 58 KM, a cztery lata po jego debiucie Peugeot zaczął także korzystać z silników diesla. Rok 1960 jest natomiast rokiem debiutu modelu 404. Auto zostało zaprojektowane przez Pininfarinę i często było wykorzystywane jako taksówka, a także brało udział w rajdach i wyścigach. W ofercie był m.in. silnik benzynowy o pojemności 1,6 litra i diesel 1,9 litra, a opcjonalnie istniała możliwość zamontowania 3-biegowej automatycznej skrzyni biegów. Kultowa stała się także odmiana kabriolet pokazana w 1961 roku.</p></div><br>
+					
+					<div id="peugeot3"><img src= "slajdy/peugeot/peugeot3.png"/></div>
+					<p>Ważnym autem dla producenta był model 504 debiutujący w 1968 roku. O ile w Europie „duży Peugeot” zdobywał niegdyś uznanie przede wszystkim urodą, oryginalnością i komfortem, to w innych zakątkach świata ceniono go przede wszystkim za niezwykłą solidność i przemyślaną, łatwą w naprawach konstrukcję. Początkowo napędzał go czterocylindrowy silnik o pojemności 1,8 litra, osiągający moc 82 KM lub w wersji z wtryskiem 97 KM. Teraz to nie do pomyślenia, ale niegdyś „504-ka” skutecznie konkurowała z Mercedesem W114/115. Wkrótce pojawiły się nowe wersje nadwozia i jednostki napędowe. W 1983 roku na rynek wchodzi cieszący się bardzo dużą popularnością Peugeot 205.  </p> <br>
+					
+					<p>W latach 80. XX wieku debiutują modele 309 (1985-1993), 405 (1987-1998) czy 605 (1989-1999). Lata 90 XX wieku to czas debiutu modeli 106 (1991-2003), 406 (1995-2004), a także produkowanego od 1998 roku do 2012 modelu 206, jak również oferowanego od 1996 roku do dziś modelu Partner czy vana 806.</p>
+					
+					<div id="peugeot4"><img src= "slajdy/peugeot/peugeot4.png"/></div>
+					<p>Z nowszych aut z serii 100 należy wymienić model 108. To samochód z segmentu A, który produkowany jest od 2014 roku. Dostępny jest jako 3 i 5-drzwiowy hatchback, a także w wersji z otartym nadwoziem. Z serii 200 na uwagę zasługuje Peugeot 2008 powstający od 2013 roku, a najnowszym autem z kolejnej serii jest model 308 II, który debiutował w 2013 roku we Frankfurcie. 308 II zbudowano na nowej płycie podłogowej PSA EMP2, którą dzieli z Citroenem C4 Picasso.W tym miejscu należy zaznaczyć, że począwszy od tego pojazdu, następcy poszczególnych modeli z końcówką 8 będą nosiły już taką samą nazwę i zostaną ich następnymi generacjami. Peugeot 308 II zyskał tytuł Car of The Year 2014.</p><br>
+
+					
+							</div>
+							
+							<div class="socials">
+										<div class="socialdivs">
+													<div class="fb">
+														<a href="http://facebook.com" target="_blank"  class="tilelink"><i class="icon-facebook"></i></a>
+													</div>
+													<div class="yt">
+														<a href="http://youtube.com" target="_blank"  class="tilelink"><i class="icon-youtube-1"></i></a>
+													</div>
+													<div class="tw">
+														<a href="http://twitter.com" target="_blank"  class="tilelink"><i class="icon-twitter"></i></a>
+													</div>
+													<div class="gplus">
+														<a href="http://plus.google.com" target="_blank"  class="tilelink"><i class="icon-gplus-squared"></i></a>
+													</div>
+											<div style="clear:both;"></div>
+										</div>
+							</div>	
+
+							<div class="footer"> autoklasyk.com &copy; 2017  
+							</div>
+				</div>
+				
+
+		
+			<script>
+
+								$(document).ready(function() {
+															var NavY = $('.nav').offset().top;
+	 
+															var stickyNav = function()
+														{
+																	var ScrollY = $(window).scrollTop();
+		  
+															if (ScrollY > NavY) { 
+																			$('.nav').addClass('sticky');
+																			$('.content').css('padding-top',' 68px'); <!--gorny padding zwieksza sie lub zmniejsza w trakcie zmiany pozycji menu, wiec content pozostaje bez ruchu -->
+															} else {
+																			$('.nav').removeClass('sticky'); 
+																			$('.content').css('padding-top', '10px');
+															}
+														};
+	 
+														stickyNav();
+	 
+														$(window).scroll(function() {
+																			stickyNav();
+														});
+													});
+													
+															var numer = Math.floor(Math.random()*5)+1; // nr aktualnie wyswietlanego slajdu 
+		
+			</script>
+			
+
+</body>
+</html>

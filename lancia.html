@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+			
+			<title>Klasyczne auta - historia w pigułce</title> 
+			
+			<meta name="description" content="Klasyczne auta. Historia i wiele innych ciekawych informacji na ich temat. Sprawdź już teraz!" />			<!-- opis witryny w google-->
+			<meta name="keywords" content="klasyka, retro, stare auta, mercedes, bmw, ford, samochód, wyścigi" /> 
+
+			<link rel="stylesheet"  href="style.css"  type="text/css" />		
+			<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">		
+			<link href="css/fontello.css" rel="stylesheet" type="text/css" />			
+			<script src="jquery-3.2.0.min.js"></script> <!--podpinam biblioteke jquery -->
+			<script src="jquery.scrollTo.min.js"></script>
+	
+				<script>
+	
+		jQuery(function($) <!--naglowek funkcji -->
+		{ 											<!-- cialo funkcji -->
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); }); //klikniecie strzalki spowoduje przewiniecie do 1 otwierajacego tagu body
+		}
+		);
+	
+	//pokaz podczas przewijania
+	$(window).scroll(function()
+	{
+			if($(this).scrollTop()>300)  $('.scrollup').fadeIn();//obiekt na rzecz ktorego ta metoda zostala wywolana; scroll od gory ekranu; jesli ktos przewinal o 300 pikseli w doł strone to zlap klase scrollup(przycisk) i spraw ze pojawi sie na ekranie w sposob animowany
+			else $('.scrollup').fadeOut();
+	}
+	);
+			</script>
+			
+</head>
+
+
+<body>
+											<a href="#" class="scrollup"></a> <!-- funkcja odpowiadajaca za powrot do spisu ale to jquery obsluzy przewiniecie dlatego tylko "#" -->
+
+				<div class="wrapper">
+				
+
+							
+							<div class="header">
+							
+										<div class="logo">
+										<span style="color: #d93a13">auto</span><span style="color:#00c5d4">klasyk.com</span>
+										</div>
+										
+										<a href="#" class="scrollup"></a> <!-- funkcja odpowiadajaca za powrot do spisu ale to jquery obsluzy przewiniecie dlatego tylko "#" -->
+							</div>
+							
+							<div class="nav">
+										<ol>
+													<li><a href="strona-glowna">Strona główna</a></li>
+													<li><a href="#">Historia</a>
+															<ul>
+																		<li><a href="poczatki">Początki</a></li>
+																		<li><a href="silnik-spalinowy">Silnik spalinowy</a></li>
+																		<li><a href="pierwsze-fabryki">Pierwsze fabryki</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta rodzinne</a>
+															<ul>
+																		<li><a href="lancia">Lancia</a></li>
+																		<li><a href="ford">Ford</a></li>
+																		<li><a href="peugeot">Peugeot</a></li>
+																		<li><a href="volkswagen">Volkswagen</a></li>
+																		<li><a href="mercedes">Mercedes-Benz</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta sportowe</a>
+															<ul>
+																		<li><a href="#">Cadillac</a></li>
+																		<li><a href="#">Ferrari</a></li>
+																		<li><a href="#">Lamborghini</a></li>
+																		<li><a href="#">Jensen Interceptor</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Wyścigówki</a>
+															<ul>
+																		<li><a href="#">Maserati</a></li>
+																		<li><a href="#">Lotus</a></li>
+																		<li><a href="#">AC Cobra</a></li>
+															</ul>
+													</li>
+															
+													<li><a href="#">O autorze</a></li>
+										</ol>
+							</div>
+							
+							<div class="content">
+							
+
+					<div id="h1"><h1>Auta rodzinne</h1>	</div>	
+					<h2>Lancia</h2>
+
+					<p>Aby sięgnąć do początków Lancii musimy się cofnąć do pierwszej dekady XX wieku. Firmę w 1906 roku w Turynie założyli Vincenzo Lancia i Claudio Fogolin. Charakterystyczną cechą dla marki jest nazywanie swoich modeli literami z greckiego alfabetu, a następnie imionami żeńskimi. </p>
+
+					<p>Vincenzo Lancia najpierw miał zostać zdaniem jego ojca adwokatem, a potem księgowym. Tak się jednak nie stało. Urodzony w 1881 roku Vincenzo od najwcześniejszych lat swojego życia wykazywał zainteresowanie pojazdami i różnego rodzaju nowościami technologicznymi. Już podczas nauki w szkole, pracował także w zakładzie zajmującym się produkcją i sprzedażą rowerów. Firma podjęła także próbę stworzenia swojego małego samochodu, pod nazwą Welleyes, ale z powodu braku wystarczających środków finansowych, prawa do pojazdu zostały sprzedane Fiatowi. Do włoskiego koncernu trafił także Vincenzo Lancia, który został jego kierowcą wyścigowym.</p>
+
+					<img src= "img/logolancia.jpg"></img>
+					<p> Vincenzo Lancia najpierw miał zostać zdaniem jego ojca adwokatem, a potem księgowym. Tak się jednak nie stało. Urodzony w 1881 roku Vincenzo od najwcześniejszych lat swojego życia wykazywał zainteresowanie pojazdami i różnego rodzaju nowościami technologicznymi. Już podczas nauki w szkole, pracował także w zakładzie zajmującym się produkcją i sprzedażą rowerów. Firma podjęła także próbę stworzenia swojego małego samochodu, pod nazwą Welleyes, ale z powodu braku wystarczających środków finansowych, prawa do pojazdu zostały sprzedane Fiatowi. Do włoskiego koncernu trafił także Vincenzo Lancia, który został jego kierowcą wyścigowym.</p></br>
+					
+					<p>Lancia postanowił jednak, że założy własny biznes i tak ze swoim przyjacielem, Claudio Fogolinem tworzy firmę biorącą nazwę od swojego nazwiska. Pierwszym pojazdem stworzonym przez włoskiego producenta był model o nazwie tipo 51 lub 12 HP, później nazwany Alphą. Pojazd był produkowany od 1908 roku, a za jego napęd odpowiadał 58-konny, 4-cylindrowym silnik. Od samego początku modele Lancii wyróżniały się innowacjami technologicznymi. Lancia Theta produkowana od 1913 roku, była pierwszym autem w Europie, które posiadało pełną elektrykę.</p>
+					
+					<p>Pierwszym autem, który odniósł sukces rynkowy był model Lambda, który pojawił się w 1922 roku. Wyróżniał się m.in. nadwoziem samonośnym oraz niezależnym przednim zawieszeniem. W 1931 roku pojawia się Astura z elastycznym zawieszeniem silnika. W 1933 roku debiutuje Augusta - pierwszy sedan na świecie, w którym pojawiły się hydrauliczne hamulce. Warto także dodać, że Lancia jako pierwsza wprowadziła do masowego wytwarzania silniki V4 i V6.</p>
+					
+					<p>Założyciel marki umiera w 1937 roku, w wieku 56 lat na atak serca. W tym samym roku na rynku debiutuje model Aprilia, który poddawany był testom aerodynamicznym. Auto posiadało także niezależne zawieszenie wszystkich kół.</p>
+					
+					<p>W latach 50. XX wieku Lancia odnosi sukcesy w sporcie motorowym. Wszystko za sprawą Gianniego Lancii, syna Vincenzo. W 1951 roku cztery Lancie Aurelie B21 zajęły cztery pierwsze miejsca w wyścigu Giro di Sicilia, a lata 1953-54 były okresem zwycięstw modeli D20 Sport, D23, D24 i D25 w wielu różnych rajdach. Próbowano też sił w Formule 1, ale z powodów finansowych od 1956 roku samochody występowały pod marką Ferrari.</p>
+					
+					<div id="lanciastratos"><img src= "img/lancia-stratos.jpg"></img></div>
+					<p>Ważny dla koncernu był rok 1969. Wtedy to Lancia przechodzi do koncernu Fiata, ale nadal produkuje samochody pod własną nazwą. Potwierdzeniem tego, że auta zachowały własny styl jest chociażby Lancia Stratos, produkowana od 1972 roku, której nadwozie zbudowano zostało z aluminium i włókna szklanego. Pierwszym jednak modelem opracowanym wspólnie z Fiatem jest model Beta. W latach 80. firma nawiązała współpracę z Saabem, a produkowała także samochody ciężarowe. Dużym sukcesem okazał się pięciodrzwiowy kompakt Delta produkowany od 1979 oraz luksusowa Thema z 1984 roku.</p></br>
+
+					<p>W styczniu 2014 roku poinformowano, że samochody Lancii zostaną wycofane ze wszystkim rynków oprócz rodzimego. Producent nie zamierza rozszerzać swojej linii modelowej i oferował będzie jedynie model Ypsilon, który obecny jest na rynku od 1996 roku. Obecnie dostępne są również m.in. Lancia Delta, Thema, Musa i Voyager.</p>
+
+					<p>Z ciekawostek dotyczących Lancii warto wspomnieć, że we Włoszech działa ekskluzywne stowarzyszenie fanów marki do którego są przyjmowani posiadacze co najmniej sześciu samochodów Lancia.</p>		
+					
+					
+					
+							</div>
+							
+							<div class="socials">
+										<div class="socialdivs">
+													<div class="fb">
+														<a href="http://facebook.com" target="_blank"  class="tilelink"><i class="icon-facebook"></i></a>
+													</div>
+													<div class="yt">
+														<a href="http://youtube.com" target="_blank"  class="tilelink"><i class="icon-youtube-1"></i></a>
+													</div>
+													<div class="tw">
+														<a href="http://twitter.com" target="_blank"  class="tilelink"><i class="icon-twitter"></i></a>
+													</div>
+													<div class="gplus">
+														<a href="http://plus.google.com" target="_blank"  class="tilelink"><i class="icon-gplus-squared"></i></a>
+													</div>
+											<div style="clear:both;"></div>
+										</div>
+							</div>	
+
+							<div class="footer"> autoklasyk.com &copy; 2017  
+							</div>
+				</div>
+				
+
+		
+			<script>
+
+								$(document).ready(function() {
+															var NavY = $('.nav').offset().top;
+	 
+															var stickyNav = function()
+														{
+																	var ScrollY = $(window).scrollTop();
+		  
+															if (ScrollY > NavY) { 
+																			$('.nav').addClass('sticky');
+																			$('.content').css('padding-top',' 68px'); <!--gorny padding zwieksza sie lub zmniejsza w trakcie zmiany pozycji menu, wiec content pozostaje bez ruchu -->
+															} else {
+																			$('.nav').removeClass('sticky'); 
+																			$('.content').css('padding-top', '10px');
+															}
+														};
+	 
+														stickyNav();
+	 
+														$(window).scroll(function() {
+																			stickyNav();
+														});
+													});
+													
+															
+		
+			</script>
+			
+
+</body>
+</html>

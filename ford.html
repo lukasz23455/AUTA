@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+			<title>Klasyczne auta - historia w pigułce</title>
+
+			<meta name="description" content="Klasyczne auta. Historia i wiele innych ciekawych informacji na ich temat. Sprawdź już teraz!" />			<!-- opis witryny w google-->
+			<meta name="keywords" content="klasyka, retro, stare auta, mercedes, bmw, ford, samochód, wyścigi" />
+
+			<link rel="stylesheet"  href="style.css"  type="text/css" />
+			<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+			<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+			<script src="jquery-3.2.0.min.js"></script> <!--podpinam biblioteke jquery -->
+			<script src="jquery.scrollTo.min.js"></script>
+
+				<script>
+
+		jQuery(function($) <!--naglowek funkcji -->
+		{ 											<!-- cialo funkcji -->
+			//zresetuj scrolla
+			$.scrollTo(0);
+
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); }); //klikniecie strzalki spowoduje przewiniecie do 1 otwierajacego tagu body
+		}
+		);
+
+	//pokaz podczas przewijania
+	$(window).scroll(function()
+	{
+			if($(this).scrollTop()>300)  $('.scrollup').fadeIn();//obiekt na rzecz ktorego ta metoda zostala wywolana; scroll od gory ekranu; jesli ktos przewinal o 300 pikseli w doł strone to zlap klase scrollup(przycisk) i spraw ze pojawi sie na ekranie w sposob animowany
+			else $('.scrollup').fadeOut();
+	}
+	);
+			</script>
+
+</head>
+
+
+<body>
+											<a href="#" class="scrollup"></a> <!-- funkcja odpowiadajaca za powrot do spisu ale to jquery obsluzy przewiniecie dlatego tylko "#" -->
+
+				<div class="wrapper">
+
+
+
+							<div class="header">
+
+										<div class="logo">
+										<span style="color: #d93a13">auto</span><span style="color:#00c5d4">klasyk.com</span>
+										</div>
+
+										<a href="#" class="scrollup"></a> <!-- funkcja odpowiadajaca za powrot do spisu ale to jquery obsluzy przewiniecie dlatego tylko "#" -->
+							</div>
+
+							<div class="nav">
+										<ol>
+													<li><a href="strona-glowna">Strona główna</a></li>
+													<li><a href="#">Historia</a>
+															<ul>
+																		<li><a href="poczatki">Początki</a></li>
+																		<li><a href="silnik-spalinowy">Silnik spalinowy</a></li>
+																		<li><a href="pierwsze-fabryki">Pierwsze fabryki</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta rodzinne</a>
+															<ul>
+																		<li><a href="lancia">Lancia</a></li>
+																		<li><a href="ford">Ford</a></li>
+																		<li><a href="peugeot">Peugeot</a></li>
+																		<li><a href="volkswagen">Volkswagen</a></li>
+																		<li><a href="mercedes">Mercedes-Benz</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Auta sportowe</a>
+															<ul>
+																		<li><a href="#">Cadillac</a></li>
+																		<li><a href="#">Ferrari</a></li>
+																		<li><a href="#">Lamborghini</a></li>
+																		<li><a href="#">Jensen Interceptor</a></li>
+															</ul>
+													</li>
+													<li><a href="#">Wyścigówki</a>
+															<ul>
+																		<li><a href="#">Maserati</a></li>
+																		<li><a href="#">Lotus</a></li>
+																		<li><a href="#">AC Cobra</a></li>
+															</ul>
+													</li>
+
+													<li><a href="#">O autorze</a></li>
+										</ol>
+							</div>
+
+							<div class="content">
+
+
+					<div id="h1"><h1>Auta rodzinne</h1>	</div>
+					<h2>Ford</h2>
+
+					<p>Henry Ford przyszedł na świat w 1863 roku w amerykańskiej rodzinie farmerskiej. Już jako piętnastolatek konstruuje swój pierwszy silnik parowy, a następnie wyjeżdża do Detroit gdzie pracuje w Edison Illuminating Comp i awansuje na stanowisko głównego inżyniera. Na powstanie pierwszego prototypu pojazdu musimy poczekać do 1896 roku. Trzy lata później Ford został jednym z założycieli Detroit Cadillac Company, jednak z powodu konfliktu ze współudziałowcami wycofuje się z interesu i zakłada własne przedsiębiorstwo. Jako kapitał na jego uruchomienie posłużyła wygrana Forda w wyścigu z kierowcą Aleksandrem Wintonem w 1901 roku. Tym razem także nie potrafił dojść do porozumienia ze wspólnikami i występuje ze spółki. Nie rezygnuje jednak tak szybko i w 1903 roku zakłada Ford Motor Company. Warto dodać, że w 1919 roku syn Henry'ego – Edsel odkupił wszystkie akcje i firma zaczęła w całości należeć do rodziny Fordów. </p>
+
+					<p>W 1908 roku pojawia się jeden z najbardziej rozpoznawalnych modeli – Model T, który powstawał do 1927 roku. Mimo stwierdzenia Henry'ego Forda, że „możesz otrzymać samochód w każdym kolorze, pod warunkiem, że będzie to kolor czarny", model T produkowany był także w innych kolorach, ale najwięcej było jednak czarnych. Za jego napęd odpowiadał silnik spalinowy czterocylindrowy, czterosuwowy o pojemności skokowej 2898 cm3 i mocy 22,5 KM, a charakterystyczna była dwustopniowa przekładnia obiegowa zawieszona na kole zamachowym. To właśnie to auto zmotoryzowało Amerykę, ale było to możliwe dzięki wprowadzeniu w roku 1913 taśmy produkcyjnej, która pozwoliła na tyle zwiększyć produkcję, że można było obniżyć cenę pojazdu. Sprawiło to, że na Forda T mogło sobie pozwolić coraz więcej osób, a dodatkowo wprowadzono kredyty na zakup samochodu. Przez 19 lat wyprodukowano aż 15 milionów tego auta.</p>
+
+					<p>Kolejny samochód Forda pojawia się w 1927 roku. To Model A, który także cieszy się dużym zainteresowaniem ze strony nabywców. Napędzany był silnikiem czterocylindrowym, dysponował mocą 40 KM i wyróżniał się m.in. hamulcem na cztery koła, trójbiegową przekładnią oraz hydraulicznymi amortyzatorami.</p>
+
+					<p>Okres II wojny światowej to czas przestawienia produkcji na potrzeby wojska. Budowano Fordy GPW, które były bliźniaczo podobne do Jeepa Willysa. W USA w latach 1941-1942 produkowano także samochód osobowy – V8 Business Coupe. Auto miało silnik o pojemności 4,0 litra i mocy 100 KM. Do produkcji cywilnych pojazdów powrócono w 1947 roku. Wtedy umiera także Henry Ford. Całkiem nowy model pojawia się na rynku w 1950 roku. To Ford Custom, który był produkowany przez 22 lata, a początkowo stał się popularnym samochodem w korpusach dyplomatycznych.Na początku lat 50. XX wieku zaczęto planować dwumiejscowy model sportowy. Projekt jednak został odłożony w czasie, a wtedy General Motors wypuszcza na rynek podobne auto - Chevrolet Corvette. Wtedy Ford odpowiada modelem Thunderbird. Do jego napędu posłużyły silniki V6 i V8, a moc przenoszona była na oś tylną poprzez 3-biegową automatyczną skrzynię biegów. Auto dysponowało 228 KM mocy i przyspieszało od 0 do 100 km/h w 7,5 sekundy.</p>
+
+					<p>W 1964 roku do produkcji zostaje wprowadzony model Mustang. Początkowo auto miało się nazywać Allegro, ale ostatecznie zadecydowano, że wolność, prędkość, siłę i jednocześnie Amerykę może symbolizować mustang. Cechowała go prostota, a do wyboru były jednostki napędowe od 101 do 320 KM mocy. W 2013 roku została zaprezentowana szósta generacja tego kultowego auta.</p>
+
+					<p>Ford Thunderbird i Mustang to nie jedyne modele, które zapewniły Fordowi sławę, a koncern rozwija produkcję swoich aut także na innych kontynentach.  Do  Europy wprowadzony zostaje Taunus 12M - miał cztery cylindry i 38 KM mocy. Złośliwi o tym samochodzie mówili nie inaczej jak Ford 79, gdyż producent doliczył się właśnie 79 zalet tego auta. W 1959 roku pojawia się Ford Anglia 105E, który wyposażony został w oszczędny, czterocylindrowy, krótkoskokowy silnik górnozaworowy. Wcześniej pojazd przeszedł testy w tunelu aerodynamicznym, co zaowocowało tylną szybą osadzoną  w stosunku do pokrywy bagażnika pod ostrym kątem. W Europie do legendy Forda przyczynił się także model Capri z 1969 roku, którego bardzo popularna  była wersja 2000 GT. Auto posiadało silnik o pojemności 2,0 litrów i mocy 90 KM oraz cechowało się bogatym wyposażeniem.</p>
+
+					<p>Od 1967 do 2000 roku w Europie oraz od 1981 do 2003 roku w Ameryce Północnej produkowany jest model Escort. Początkowo Escorty MK1 oferowane były z silnikami benzynowymi o pojemnościach 1,1, 1,3 i 1,6 litra. W 1975 roku pojawia się jego druga seria, która jest faceliftingiem pierwszej, a zmiany pojawiają się w 1980 roku wraz z wprowadzeniem trzeciej generacji. W ofercie dostępne się nowe silniki, napęd z tyłu przeniesiono na przód, a następnie pojawiają się kolejne wersje nadwozia m.in. hatchback i kabriolet. Niewielki lifting pojazd przechodzi w 1986 roku, a wraz z pojawieniem się wersji MK V, auto otrzymuje szesnastozaworowy silnik 1,8, a później wersję 2,0 l produkującą 150 KM. Duża zamiana stylistyki Forda nastąpiła też w 1995 roku, a trzy lata później Escorta zastąpił Focus. Od 1984 do 1994 roku produkowany jest model Scorpio, a od 1976 roku dostępny jest Ford Fiesta.</p>
+
+					<p>Obecnie Ford oferuje m.in. model Ka, który budowany jest w fabryce Fiata w Bielsku-Białej, Fiestę, Focusa, Mondeo, vany C-Maxa, S-Maxa i Galaxy. Pierwszym SUV-em Forda był model Kuga a produkowane są także dostawcze modele Transit oraz Transit Connect.</p>
+
+
+
+							</div>
+
+							<div class="socials">
+										<div class="socialdivs">
+													<div class="fb">
+														<a href="http://facebook.com" target="_blank"  class="tilelink"><i class="icon-facebook"></i></a>
+													</div>
+													<div class="yt">
+														<a href="http://youtube.com" target="_blank"  class="tilelink"><i class="icon-youtube-1"></i></a>
+													</div>
+													<div class="tw">
+														<a href="http://twitter.com" target="_blank"  class="tilelink"><i class="icon-twitter"></i></a>
+													</div>
+													<div class="gplus">
+														<a href="http://plus.google.com" target="_blank"  class="tilelink"><i class="icon-gplus-squared"></i></a>
+													</div>
+											<div style="clear:both;"></div>
+										</div>
+							</div>
+
+							<div class="footer"> autoklasyk.com &copy; 2017
+							</div>
+				</div>
+
+
+
+			<script>
+
+								$(document).ready(function() {
+															var NavY = $('.nav').offset().top;
+
+															var stickyNav = function()
+														{
+																	var ScrollY = $(window).scrollTop();
+
+															if (ScrollY > NavY) {
+																			$('.nav').addClass('sticky');
+																			$('.content').css('padding-top',' 68px'); <!--gorny padding zwieksza sie lub zmniejsza w trakcie zmiany pozycji menu, wiec content pozostaje bez ruchu -->
+															} else {
+																			$('.nav').removeClass('sticky');
+																			$('.content').css('padding-top', '10px');
+															}
+														};
+
+														stickyNav();
+
+														$(window).scroll(function() {
+																			stickyNav();
+														});
+													});
+
+
+
+			</script>
+
+
+</body>
+</html>
